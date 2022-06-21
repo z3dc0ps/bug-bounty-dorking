@@ -1,4 +1,3 @@
-# bug-bounty-dorking
+<h1>Bug-bounty-dorking</h1>
 
-
-https://jimmisimon.in/bbd/
+Project link : https://dorks.jimmisimon.in
