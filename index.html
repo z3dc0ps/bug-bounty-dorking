@@ -340,16 +340,16 @@
                     open_url = "https://securityheaders.com/?q="+target_name+"&followRedirects=on";
                     break;
                 case 42:
-                    open_url = "inurl:gitlab "+target_name;
+                    open_url += 'site:gitlab "'+target_name+'"';
                     break;
                 case 43:
-                    open_url = "site:s3.amazonaws.com '"+target_name+"'";
+                    open_url += 'site:s3.amazonaws.com "'+target_name+'"';
                     break;
                 case 44:
-                    open_url = "site:pastebin.com '"+target_name+"'";
+                    open_url += 'site:pastebin.com "'+target_name+'"';
                     break;
                 case 45:
-                    open_url = "site:atlassian.net | site:bitbucket.org '"+target_name+"'";
+                    open_url += 'site:atlassian.net | site:bitbucket.org "'+target_name+'"';
                     break;
                 case 46:
                     open_url = "https://github.com/search?q="+target_name;
