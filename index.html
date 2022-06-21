@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+            margin: 50px;
+        }
+        h1{
+            font-size: 60px;
+            text-align: center;
+        }
+        h2{
+            font-size: 40px;
+            color: grey;
+        }
+        input{
+            text-align: center;
+            font-size: 20px;
+            width: 70%;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 15px;
+        }
+        div{
+            text-align: center;
+        }
+        #image{
+            position: absolute;
+            margin: 0%;
+            text-align: left;
+            
+        }
+        #footer_button{
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 30%;
+            font-size: 20px;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            font-size: 20px;
+            padding: 15px;
+            border: 1px solid black;
+            color: red;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        hr{
+            border: none;
+            height: 1px;
+            background-color: black;
+        }
+        img{
+            width: 20%;
+        }
+        
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Google Dorks</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <div id="image">
+        
+        <img src="https://pngimg.com/uploads/github/github_PNG15.png" onclick="window.open('https://github.com/z3dc0ps/bug-bounty-dorking')">
+
+    </div>
+    <h1>Bug Bounty Dorks</h1>
+    <div>
+        <input type="text" id="name_target" placeholder="Enter Target - eg: dell.com">
+        <p id="target_error" style="color: red;"></p>
+    </div>
+    <br><br>
+    <br><br>
+        <h2>Domain, subdomain check</h2>
+        <br><br>
+    <table>
+        <tr>
+            <td><a href="#" onclick="search_dorks(1)">Subdomain - Google</a></td>
+            <td><a href="#" onclick="search_dorks(2)">Sub Subdomain - Google</a></td>
+            <td><a href="#" onclick="search_dorks(3)">Sub Sub Subdomain - Google</a></td>
+            <td><a href="#" onclick="search_dorks(4)">Subdomain - crt.sh</a></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#" onclick="search_dorks(5)">check censys.io - certificates</a></td>
+            <td><a href="#" onclick="search_dorks(6)">check censys.io - hosts</a></td>
+            <td><a href="#" onclick="search_dorks(7)">check shodan.io </a></td>
+        </tr>
+    </table>
+    <br><br>
+        <h2>Common checking</h2>
+        <br><br>
+    <table>
+        <tr>
+            <td><a href="#" onclick="search_dorks(8)">phpinfo </a></td>
+            <td><a href="#" onclick="search_dorks(9)">Directory Listing </a></td>
+            <td><a href="#" onclick="search_dorks(10)">Exposed config files </a></td>
+            <td><a href="#" onclick="search_dorks(11)">Wordpress files </a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onclick="search_dorks(12)">Log files </a></td>
+            <td><a href="#" onclick="search_dorks(21)">public files </a></td>
+            <td><a href="#" onclick="search_dorks(37)">Backup files </a></td>
+            <td><a href="#" onclick="search_dorks(37)">Structs 2 </a></td>             
+            
+        </tr>
+        <tr>
+            <td><a href="#" onclick="search_dorks(41)">Secure Heads</a></td>
+            <td><a href="#" onclick="search_dorks(42)">public files </a></td>
+            <td><a href="#" onclick="search_dorks(43)">s3 buckets </a></td>
+            <td><a href="#" onclick="search_dorks(44)">pastebin entries </a></td>             
+            
+        </tr>
+        <tr>
+            <td><a href="#" onclick="search_dorks(45)">Atlassian/Bitbucket checks</a></td>
+            <td><a href="#" onclick="search_dorks(46)">Github checks </a></td>
+            <td><a href="#" onclick="search_dorks(47)">Github checks </a></td>
+            <td><a href="#" onclick="search_dorks(48)">Github checks </a></td>             
+            
+        </tr>
+    </table>
+    <br><br>
+        <h2>Open Redirection checking</h2>
+        <br><br>
+    <table>
+        <tr>
+            <td><a href="#" onclick="search_dorks(23)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(24)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(25)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(26)">Open Redirection </a></td>          
+            
+        </tr>
+        <tr>
+            <td><a href="#" onclick="search_dorks(27)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(28)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(29)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(30)">Open Redirection </a></td>          
+            
+        </tr>
+        <tr>
+            <td><a href="#" onclick="search_dorks(31)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(32)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(33)">Open Redirection </a></td>
+            <td><a href="#" onclick="search_dorks(34)">Open Redirection </a></td>          
+            
+        </tr>
+        <tr>
+            <td><a href="#" onclick="search_dorks(35)">Open Redirection </a></td>   
+            <td><a href="#" onclick="search_dorks(22)">Open Redirection </a></td>      
+            
+        </tr>
+        </table>
+        <br><br>
+        <h2>SQL Error check</h2>
+        <br><br>
+        <table>
+        <tr>
+            <td><a href="#" onclick="search_dorks(14)">SQL errors</a></td>
+            <td><a href="#" onclick="search_dorks(15)">SQL errors</a></td>
+            <td><a href="#" onclick="search_dorks(16)">SQL errors</a></td>
+            <td><a href="#" onclick="search_dorks(17)">SQL errors</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onclick="search_dorks(18)">SQL errors</a></td>
+            <td><a href="#" onclick="search_dorks(19)">SQL errors</a></td>
+            <td><a href="#" onclick="search_dorks(20)">SQL errors</a></td>
+        </tr>
+        </table>
+        <br><br>
+        <h2>Login Pages</h2>
+        <br><br>
+        <table>
+            <tr>
+                <td><a href="#" onclick="search_dorks(13)">Login pages</a></td>
+                <td><a href="#" onclick="search_dorks(38)">Login pages</a></td>
+                <td><a href="#" onclick="search_dorks(39)">Login pages</a></td>
+            </tr>
+        </table>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <hr>
+    <br><br>
+        <h2>Footer checkings</h2>
+        <br><br>
+    <div>
+        <input type="text" id="name_footer" placeholder="Enter Footer - eg:  Meta © 2022">
+        <p id="footer_error" style="color: red;"></p>
+    </div>
+    <br><br>
+    <center>    
+        <button id="footer_button" onclick="footer_search()">Footer search</button>
+    </center>
+</body>
+<script>
+    function search_dorks(dork_id){
+        target_name = document.getElementById('name_target').value;
+        if(target_name.length == 0){
+            document.getElementById('target_error').innerHTML = "Enter target"
+        }else{
+            open_url = "https://www.google.com/search?q=";
+            switch(dork_id){
+                case 1:
+                    open_url += "site:'*."+target_name+"'";
+                    break;
+                case 2:
+                    open_url += "site:'*.*."+target_name+"'";
+                    break;
+                case 3:
+                    open_url += "site:'*.*.*."+target_name+"'";
+                    break;
+                case 4:
+                    open_url = "https://crt.sh/?q="+target_name;
+                    break;
+                case 5:
+                    open_url = "https://search.censys.io/certificates?q="+target_name;
+                    break;
+                case 6:
+                    open_url = "https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=100&virtual_hosts=INCLUDE&q="+target_name;
+                    break;
+                case 7:
+                    open_url = "https://www.shodan.io/search?query="+target_name;
+                    break;
+                case 8:
+                    open_url += "site:"+target_name+" ext:php 'published by the PHP Group'";
+                    break;
+                case 9:
+                    open_url += "site:"+target_name+" intitle:'Index of'";
+                    break;
+                case 10:
+                    open_url += "site:"+target_name+" ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:db | ext:config | ext:doc | ext:info | ext:sql | ext:mdb | ext:dbf | ext:dbs | ext:mysql | ext:psql | ext:pgsql | ext:pdf";
+                    break;
+                case 11:
+                    open_url += "site:"+target_name+" inurl:wp- | inurl:wp-content | inurl:plugins | inurl:uploads | inurl:themes | inurl:download";
+                    break;
+                case 12:
+                    open_url += "site:"+target_name+" ext:log | ext:txt";
+                    break;
+                case 13:
+                    open_url += "site:"+target_name+" inurl:login | intitle:login";
+                    break;
+                case 14:
+                    open_url += "site:"+target_name+" intext:'sql syntax near'";
+                    break;
+                case 15:
+                    open_url += "site:"+target_name+" intext:'syntax error has occurred'";
+                    break;
+                case 16:
+                    open_url += "site:"+target_name+" intext:'incorrect syntax near'";
+                    break;
+                case 17:
+                    open_url += "site:"+target_name+" intext:'unexpected end of SQL command'";
+                    break;
+                case 18:
+                    open_url += "site:"+target_name+" intext:'Warning: mysql_connect()'";
+                    break;
+                case 19:
+                    open_url += "site:"+target_name+" intext:'Warning: mysql_query()'";
+                    break;
+                case 20:
+                    open_url += "site:"+target_name+" intext:'Warning: pg_connect()'";
+                    break;
+                case 21:
+                    open_url += "site:"+target_name+" ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv";
+                    break;
+                case 22:
+                    open_url += "site:"+target_name+" inurl:redir= | inurl:url= ";
+                    break;
+                case 23:
+                    open_url += "site:"+target_name+" inurl:redirect= | inurl:return=";
+                    break;
+                case 24:
+                    open_url += "site:"+target_name+" inurl:src= | inurl:r= ";
+                    break;
+                case 25:
+                    open_url += "site:"+target_name+" inurl:dest= | inurl:next= ";
+                    break;
+                case 26:
+                    open_url += "site:"+target_name+" inurl:forward= | inurl:continue=";
+                    break;
+                case 27:
+                    open_url += "site:"+target_name+"  inurl:window= | inurl:domain= ";
+                    break;
+                case 28:
+                    open_url += "site:"+target_name+"  inurl:window= | inurl:domain= ";
+                    break;
+                case 29:
+                    open_url += "site:"+target_name+" inurl:callback= | inurl:page= ";
+                    break;
+                case 30:
+                    open_url += "site:"+target_name+" inurl:feed= | inurl:host= ";
+                    break;
+                case 31:
+                    open_url += "site:"+target_name+" inurl:reference= | inurl:site= ";
+                    break;
+                case 32:
+                    open_url += "site:"+target_name+" inurl:html= | inurl:document= ";
+                    break;
+                case 33:
+                    open_url += "site:"+target_name+" inurl:folder= | inurl:pdf= ";
+                    break;
+                case 34:
+                    open_url += "site:"+target_name+" inurl:php= | inurl:img= ";
+                    break;
+                case 35:
+                    open_url += "site:"+target_name+" inurl:image= | inurl:doc= ";
+                    break;
+                case 36:
+                    open_url += "site:"+target_name+" inurl:callback= | inurl:page= ";
+                    break;
+                case 37:
+                    open_url += "site:"+target_name+" ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup ";
+                    break;
+                case 38:
+                    open_url += "site:"+target_name+" inurl:signin | intitle: signin ";
+                    break;
+                case 39:
+                    open_url += "site:"+target_name+" inurl:auth ";
+                    break;
+                case 40:
+                    open_url += "site:"+target_name+" ext:action | ext:struts | ext:do ";
+                    break;
+                case 41:
+                    open_url = "https://securityheaders.com/?q="+target_name+"&followRedirects=on";
+                    break;
+                case 42:
+                    open_url = "inurl:gitlab "+target_name;
+                    break;
+                case 43:
+                    open_url = "site:s3.amazonaws.com '"+target_name+"'";
+                    break;
+                case 44:
+                    open_url = "site:pastebin.com '"+target_name+"'";
+                    break;
+                case 45:
+                    open_url = "site:atlassian.net | site:bitbucket.org '"+target_name+"'";
+                    break;
+                case 46:
+                    open_url = "https://github.com/search?q="+target_name;
+                    break;
+                case 47:
+                    open_url = "https://github.com/search?q=*."+target_name;
+                    break;
+                case 48:
+                    open_url = "https://github.com/search?q=*.*."+target_name;
+                    break;
+
+            }
+            window.open(open_url);
+        }
+    }
+
+    function footer_search(){
+
+        footer = document.getElementById('name_footer').value;
+        document.getElementById('footer_error').innerHTML = "";
+        if(footer.length ==0 ){
+            document.getElementById('footer_error').innerHTML = "Enter Footer";
+        }
+        else{
+            window.open("https://www.google.com/search?q=intext:"+footer);
+        }
+    }
+</script>
+</html>
