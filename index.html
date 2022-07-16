@@ -100,6 +100,10 @@
             <td><a href="#" onclick="search_dorks(5)">check censys.io - certificates</a></td>
             <td><a href="#" onclick="search_dorks(6)">check censys.io - hosts</a></td>
             <td><a href="#" onclick="search_dorks(7)">check shodan.io </a></td>
+            <td><a href="#" onclick="search_dorks(49)">check shodan.io </a></td>
+        </tr>
+         <tr>
+            <td><a href="#" onclick="search_dorks(50)">check censys.io - certificates</a></td>
         </tr>
     </table>
     <br><br>
@@ -354,6 +358,12 @@
                     break;
                 case 48:
                     open_url = "https://github.com/search?q=*.*."+target_name;
+                    break;
+                case 49:
+                    open_url = "https://www.shodan.io/search?query="+"org:'"+target_name+"'";
+                    break;
+                case 50:
+                    open_url = "https://www.shodan.io/search?query="+"ssl:'"+target_name+"'";
                     break;
 
             }
