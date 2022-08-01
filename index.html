@@ -104,6 +104,7 @@
         </tr>
          <tr>
             <td><a href="#" onclick="search_dorks(50)">check shodan.io - certificates</a></td>
+            <td><a href="#" onclick="search_dorks(51)">check shodan.io - certificates</a></td>
         </tr>
     </table>
     <br><br>
@@ -364,6 +365,9 @@
                     break;
                 case 50:
                     open_url = "https://www.shodan.io/search?query="+"ssl:'"+target_name+"'";
+                    break;
+                case 51:
+                    open_url = "https://www.shodan.io/search?query="+"hostname:'"+target_name+"'";
                     break;
 
             }
